@@ -1,0 +1,121 @@
+/**
+ * Copyright 2021 sfchi
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ 
+
+ *{
+    box-sizing: border-box;
+}
+
+ body {
+     font-family: 'Roboto', sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     margin: 0;
+     background-color: lavenderblush;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ .card {
+     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+     border-radius: 10px;
+     overflow: hidden;
+     width: 450px;
+ }
+
+ .card-header{
+     height: 300px;
+ }
+
+ .card-header img {
+     object-fit: cover;
+     height: 100%;
+     width: 100%;
+ }
+
+ .card-content {
+     background-color: #fff;
+     padding: 2rem;
+ }
+
+ .card-title {
+     margin: 0;
+     font-size: 1.4rem;
+ }
+
+ .card-excerpt {
+     color: #5f5f5f;
+     margin: 10px 0 20px;
+ }
+
+ .author {
+     display: flex;
+ }
+
+ .profile-img {
+     border-radius: 50px;
+     overflow: hidden;
+     height: 60px;
+     width: 60px;
+ }
+
+ .author-info {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     margin-left: 10px;
+     width: 150px;
+ }
+
+ .author-info small {
+     color: #5f5f5f;
+     margin-top: 5px;
+ }
+
+ .animated-bg {
+    background-image: linear-gradient(
+      to right,
+      #f6f7f8 0%,
+      #edeef1 10%,
+      #f6f7f8 20%,
+      #f6f7f8 100%
+    );
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+  }
+  
+  .animated-bg-text {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
+    width: 100%;
+  }
+  
+  @keyframes bgPos {
+    0% {
+      background-position: 50% 0;
+    }
+  
+    100% {
+      background-position: -150% 0;
+    }
+  }
